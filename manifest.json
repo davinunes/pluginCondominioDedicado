@@ -7,7 +7,9 @@
 		{
 			"matches": [
 				"*://app.condominiodedicado.com.br/sistema/portaria/automovel/*",
-				"*://app.condominiodedicado.com.br/sistema/portaria/visitante-acesso/*"
+				"*://app.condominiodedicado.com.br/sistema/portaria/visitante-acesso/*",
+				"*://app.condominiodedicado.com.br/sistema/morador/automovel/*",
+				"*://app.condominiodedicado.com.br/sistema/morador/autorizacao/*"
 			],
 			"js": [
 				"jquery-3.6.0.min.js",
