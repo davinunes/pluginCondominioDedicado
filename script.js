@@ -12,17 +12,20 @@ const interval = setInterval(()=>{
 		const meuBotao = document.querySelector("#it_remove_mascara");
 		if(meuBotao){
 			if(document.getElementById('it_remove_mascara').checked){
+				var mk = $("#search_nu_placa").data("rawMaskFn");
+				console.log(mk);
+				if(typeof mk == undefined){
+
+				}
 				
-				chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-					chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
-						$("#search_nu_placa").mask('%%%-$##$');
-					});
-				  });
+				// $("#search_nu_placa").mask('%%%-$##$');
 				
 				
 			}else{
+				var mk = $("#search_nu_placa").data("rawMaskFn");
+				console.log(mk);
 				
-				$("#search_nu_placa").unmask();
+				// $("#search_nu_placa").unmask();
 			}
 			
 		}else{

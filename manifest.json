@@ -1,6 +1,13 @@
 {
 	"name":"MiamiBeachFiltro",
 	"manifest_version":3,
+	"permissions": [
+        "tabs",
+        "storage",
+        "scripting",
+        "activeTab",
+        "cookies"
+    ],
 	"version":"1.0",
 	"description":"Altera a mascara de validação em algumas páginas pelo PC",
 	"content_scripts": [
@@ -11,6 +18,7 @@
 			],
 			"js": [
 				"jquery-3.6.0.min.js",
+				"jquery.mask.js",
 				"script.js"
 			]
 		}
