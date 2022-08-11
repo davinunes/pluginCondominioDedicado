@@ -1,24 +1,16 @@
 {
 	"name":"MiamiBeachFiltro",
 	"manifest_version":3,
-	"permissions": [
-        "tabs",
-        "storage",
-        "scripting",
-        "activeTab",
-        "cookies"
-    ],
 	"version":"1.0",
 	"description":"Altera a mascara de validação em algumas páginas pelo PC",
 	"content_scripts": [
 		{
 			"matches": [
-				"https://app.condominiodedicado.com.br/sistema/portaria/automovel/*",
-				"https://app.condominiodedicado.com.br/sistema/portaria/visitante-acesso/*"
+				"*://app.condominiodedicado.com.br/sistema/portaria/automovel/*",
+				"*://app.condominiodedicado.com.br/sistema/portaria/visitante-acesso/*"
 			],
 			"js": [
 				"jquery-3.6.0.min.js",
-				"jquery.mask.js",
 				"script.js"
 			]
 		}

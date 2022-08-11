@@ -12,24 +12,29 @@ const interval = setInterval(()=>{
 		const meuBotao = document.querySelector("#it_remove_mascara");
 		if(meuBotao){
 			if(document.getElementById('it_remove_mascara').checked){
-				var mk = $("#search_nu_placa").data("rawMaskFn");
-				console.log(mk);
-				if(typeof mk == undefined){
-
-				}
-				
-				// $("#search_nu_placa").mask('%%%-$##$');
-				
+				$("#placa_shadow").show();
+				$("#search_nu_placa").hide();
 				
 			}else{
-				var mk = $("#search_nu_placa").data("rawMaskFn");
-				console.log(mk);
-				
-				// $("#search_nu_placa").unmask();
+				$("#placa_shadow").hide().val("");
+				$("#search_nu_placa").show();
+
 			}
 			
 		}else{
 			console.log("Precisa Criar o Botão");
+			const btng = document.createElement("input");
+			btng.setAttribute("id","placa_shadow");
+			btng.setAttribute("type","text");
+			btng.setAttribute("min","1");
+			btng.addEventListener("keyup",()=>{
+				let escrito = $("#placa_shadow").val();
+				$("#search_nu_placa").val(escrito);
+				console.log(escrito);
+
+			});
+			$("#search_nu_placa").parent().append(btng);
+
 			
 			// Crio o botão e adiciono na página
 			const button = document.createElement("input");
@@ -38,6 +43,7 @@ const interval = setInterval(()=>{
 			button.setAttribute("type","checkbox");
 			$("#search_nu_placa").parent().append(button);
 			$("#search_nu_placa").parent().append(" Remover Máscara");
+
 		}
 
 
