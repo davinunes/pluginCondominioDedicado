@@ -1,6 +1,6 @@
 {
 	"name":"MiamiBeachFiltro",
-	"manifest_version":3,
+	"manifest_version":2,
 	"version":"1.0",
 	"description":"Altera a mascara de validação em algumas páginas pelo PC",
 	"content_scripts": [

@@ -14,3 +14,6 @@ Ative o modo desenvolvedor e depois clique em carregar descompactado
 
 Nevegue até a pasta onde descompactou a extensão
 
+![](print/ScreenShot-2022-08-11_12-34.png)
+
+Pronto, basta usar o sistema normalmente agora.
