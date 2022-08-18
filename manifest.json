@@ -9,6 +9,7 @@
 				"*://app.condominiodedicado.com.br/sistema/portaria/automovel/*",
 				"*://app.condominiodedicado.com.br/sistema/portaria/visitante-acesso/*",
 				"*://app.condominiodedicado.com.br/sistema/morador/automovel/*",
+				"*://app.condominiodedicado.com.br/sistema/condominio/ocorrencia*",
 				"*://app.condominiodedicado.com.br/sistema/morador/autorizacao/*"
 			],
 			"js": [
@@ -18,7 +19,3 @@
 		}
 	]	
 }
-
-/* 
-Para que as nossas extensões funcionem corretamente no Firefox é preciso fazer uma pequena configuração. Na barra de endereços do Firefox, digite “about:config” sem as aspas, e aperte “Enter”. Procure por “xpinstall.signatures.required, e dê um clique duplo na palavra “true” mudando para “false”
- */

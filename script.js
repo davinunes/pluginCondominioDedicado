@@ -49,3 +49,23 @@ const interval = setInterval(()=>{
 
 	}
 },200);
+
+const livro = setInterval(()=>{
+
+	if($("#pgwModal").is(":visible")){
+		$("#ocorrencia-resposta-form").hide();
+    
+		if(typeof $(".ui.list > .item > .content > a") != undefined){
+			let teste = $(".ui.list > .item > .content > a")
+			// console.log(teste);
+			for(i=0;i< teste.length;i++){
+				// console.log(teste[i].href)
+				let img = "<img src='"+teste[i].href+"'></img>"
+				$(teste[i]).parent().append(img);
+				$(teste[i]).remove();
+			}
+		
+		}
+	}
+
+},200);
