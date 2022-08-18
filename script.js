@@ -59,10 +59,14 @@ const livro = setInterval(()=>{
 			let teste = $(".ui.list > .item > .content > a")
 			// console.log(teste);
 			for(i=0;i< teste.length;i++){
-				// console.log(teste[i].href)
-				let img = "<img src='"+teste[i].href+"'></img>"
-				$(teste[i]).parent().append(img);
-				$(teste[i]).remove();
+				url = teste[i].href;
+				// console.log()
+				if(url.match('(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF)$')){
+
+					let img = "<img src='"+teste[i].href+"'></img>"
+					$(teste[i]).parent().append(img);
+					$(teste[i]).remove();
+				}
 			}
 		
 		}
