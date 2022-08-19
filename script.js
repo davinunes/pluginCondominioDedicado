@@ -57,6 +57,8 @@ const livro = setInterval(()=>{
     
 		if(typeof $(".ui.list > .item > .content > a") != undefined){
 			let teste = $(".ui.list > .item > .content > a")
+			$(".ui.list").css("display","inline-block")
+			$(".ui.list").css("vertical-align","middle")
 			// console.log(teste);
 			for(i=0;i< teste.length;i++){
 				url = teste[i].href;
