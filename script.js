@@ -61,7 +61,7 @@ const livro = setInterval(()=>{
 			for(i=0;i< teste.length;i++){
 				url = teste[i].href;
 				// console.log()
-				if(url.match('(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF|whatsapp)$')){
+				if(url.match('(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF|whatsapp|heic)$')){
 
 					let img = "<img style='width:250px' src='"+teste[i].href+"'></img>"
 					$(teste[i]).parent().append(img);
