@@ -51,6 +51,7 @@ const interval = setInterval(()=>{
 },200);
 
 const livro = setInterval(()=>{
+	$(".btn-grid-resposta").removeAttr("href");
 
 	if($("#pgwModal").is(":visible")){
 		$("#ocorrencia-resposta-form").hide();
