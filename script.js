@@ -51,7 +51,12 @@ const interval = setInterval(()=>{
 },200);
 
 const livro = setInterval(()=>{
-	$(".btn-grid-resposta").removeAttr("href");
+	$("a").each(function () {
+		if($(this).attr("href") == "#"){
+
+			$(this).removeAttr("href");
+		}
+	});
 
 	if($("#pgwModal").is(":visible")){
 		$("#ocorrencia-resposta-form").hide();
@@ -64,7 +69,7 @@ const livro = setInterval(()=>{
 			for(i=0;i< teste.length;i++){
 				url = teste[i].href;
 				// console.log()
-				if(url.match('(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF|whatsapp|heic)$')){
+				if(url.match('(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF|whatsapp|heic|miui)$')){
 
 					let img = "<img style='width:250px' src='"+teste[i].href+"'></img>"
 					$(teste[i]).parent().append(img);
