@@ -1,5 +1,5 @@
 console.log('Extensão carregada');
-
+var pagina = $(location).attr('pathname');
 
 
 const interval = setInterval(()=>{
@@ -85,18 +85,21 @@ const livro = setInterval(()=>{
 		}
 	}
 
-	let pingo = $(".tooltip-grid")
-	var estilo = {
-		"background-color": "lightskyblue",
-		"font-size": "xx-small",
-		"width": "81%",
-		"height": "auto",
-		"padding": "5px"
-	}
-	for(i=0;i< pingo.length;i++){
-		let texto = $(pingo[i]).attr("data-html")
-		$(pingo[i]).html(texto)
-		$(pingo[i]).css(estilo)
+	if(pagina == "/sistema/condominio/ocorrencia"){
+		let pingo = $(".tooltip-grid")
+		var estilo = {
+			"background-color": "lightskyblue",
+			"font-size": "xx-small",
+			"width": "81%",
+			"height": "auto",
+			"padding": "5px"
+		}
+		for(i=0;i< pingo.length;i++){
+			let texto = $(pingo[i]).attr("data-html")
+			$(pingo[i]).html(texto)
+			$(pingo[i]).css(estilo)
+		}
+
 	}
 
 },200);
