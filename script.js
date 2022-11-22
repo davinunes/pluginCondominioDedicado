@@ -74,9 +74,16 @@ const livro = setInterval(()=>{
 					let img = "<img style='width:250px' src='"+teste[i].href+"'></img>"
 					$(teste[i]).parent().append(img);
 					$(teste[i]).remove();
-				}else if(url.match('(mp4|mpeg|3gp|avi|m4v|mov|mpg|wmv|asf)$')){
+				}
+				if(url.match('(mp4|mpeg|3gp|avi|m4v|mov|mpg|wmv|asf)$')){
 
 					let img = "<video controls style='width:250px' src='"+teste[i].href+"'></video>"
+					$(teste[i]).parent().append(img);
+					$(teste[i]).remove();
+				}
+				if(url.match('(m4a|wav)$')){
+
+					let img = "<audio controls style='width:250px' src='"+teste[i].href+"'></audio>"
 					$(teste[i]).parent().append(img);
 					$(teste[i]).remove();
 				}
