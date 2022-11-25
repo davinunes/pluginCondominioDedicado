@@ -96,7 +96,7 @@ const livro = setInterval(()=>{
 		let pingo = $(".tooltip-grid")
 		var estilo = {
 			"background-color": "lightskyblue",
-			"font-size": "x-small",
+			"font-size": "small",
 			"width": "81%",
 			"height": "auto",
 			"padding": "5px"
@@ -109,4 +109,4 @@ const livro = setInterval(()=>{
 
 	}
 
-},200);
+},500);
