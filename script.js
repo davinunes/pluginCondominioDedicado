@@ -75,7 +75,7 @@ const livro = setInterval(()=>{
 					$(teste[i]).parent().append(img);
 					$(teste[i]).remove();
 				}
-				if(url.match('(mp4|mpeg|3gp|avi|m4v|mov|mpg|wmv|asf)$')){
+				if(url.match('(mp4|MP4|mpeg|3gp|avi|m4v|mov|mpg|wmv|asf)$')){
 
 					let img = "<video controls style='width:250px' src='"+teste[i].href+"'></video>"
 					$(teste[i]).parent().append(img);
